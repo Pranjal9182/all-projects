@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f1f3f6;
+}
+
+/* Header */
+header {
+    background: #2874f0;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* SECTION = GRID (important) */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    /* 🔥 THIS replaces <br> */
+}
+
+/* Product Card */
+article {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    height: 150px;
+    object-fit: contain;
+}
+
+article h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+article p {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    background: #ff9f00;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fb8c00;
+}
+
+/* Footer */
+footer {
+    background: #172337;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}

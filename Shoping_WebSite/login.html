@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f1f3f6;
+}
+
+/* Header */
+header {
+    background: #2874f0;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Center form */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Form container */
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2874f0;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #fb641b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #e85c19;
+}
+
+/* Links */
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #172337;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <h1>Shopping Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+       <section>
+        <form>
+        <h2>Login to Your Account </h2>
+        <label for="email">Email:</label>
+        <input type="email" name="userEmail" id="email" placeholder="Your Email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="userPassword" id="password"placeholder="Enter your Password" required>
+        
+        <div class="checkbox">
+        <input type="checkbox" id="remember" required>
+        <label for="remember">Remember Me</label>
+        
+        </div>
+        <button type="submit" > Login</button>
+        <br><br>
+        <p><a href="forgot.html">Forget Password?</a></p>
+            <p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+                
+                
+
+        </form>
+        </section>
+    </main>
+       <hr>
+    <footer>
+        <p>Contact: shopify@gmail.com</p>
+        <p>&copy; 2026 Shopping Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #e6ecf3);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0f172a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+header a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Sections layout */
+section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Map styling */
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    background: #0f172a;
+    color: #cbd5f5;
+    font-size: 14px;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+<body>
+    <header>
+        <h1>This is our Contact Page</h1><br>
+        <ul>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+        </ul>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <b>
+            <p>Feel free to reach out to us anytime.</p>
+        </b>
+        <p><b>Email:</b> pranjalmaurya.141@gmail.com</p>
+        <p><b>Phone:</b> +91 9876543210</p><br><br>
+
+        <section>
+            <h3>Send Message :</h3><br>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="userName" id="name" placeholder="Enter Your Name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="userEmail" id="email" placeholder="Your Email" required><br><br>
+                <label for="phone">Phone No:</label>
+                <input type="tel" pattern="[0-9]{10}" name="userPhoneNo" id="phone"
+                    placeholder="Your 10-digit Indian Number" required><br><br>
+
+                <label>Message:</label><br>
+                <textarea name="userMessage" placeholder="Your Message" required></textarea><br><br>
+                <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+                <button type="submit">Send</button>
+
+            </form>
+
+        </section>
+        <section>
+            <h3>Our Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28000.162765061556!2d77.47271877530272!3d28.689037988067966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf230c51204b1%3A0xd053494ad5b99485!2sGovindpuram%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201013!5e0!3m2!1sen!2sin!4v1776328454543!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;
+                  " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+</body>
+
+</html>

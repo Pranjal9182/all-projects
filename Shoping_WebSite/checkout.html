@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Layout */
+main {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Headings */
+h2 {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Payment */
+section:nth-child(3) input {
+    margin-right: 5px;
+}
+
+section:nth-child(3) {
+    line-height: 1.8;
+}
+
+/* Order Summary */
+article {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        grid-column: span 1;
+    }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+</head>
+
+
+<body>
+<header>
+    <h1>Shopping Store</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+<main>
+    <h2>Checkout</h2>
+    <section>
+        <h3>Billing Details</h3><br>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="userName" id="name" placeholder="Enter Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="userEmail" id="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" pattern="[0-9]{10}" name="userPhoneNo" id="phone" placeholder="Your 10 digits number"
+                required>
+
+            <label>Address:</label>
+            <textarea required placeholder="Text...."></textarea>
+
+
+        </form>
+    </section>
+    <section>
+    <h3>Payment Methods</h3>
+    <input type="radio" name="payment">Cash on Delivery<br>
+    <input type="radio" name="payment">UPI<br>
+    <input type="radio" name="payment">Card<br>
+    </section>
+    <section>
+        <h3>Order Summary</h3><br>
+        <article>
+            <p>Samsung Galaxy A53 5g (x1):₹15,999</p>
+        </article>
+         <article>
+            <p>Samsung Galaxy A14 5g (x1):₹14,999</p>
+        </article>
+         <article>
+            <p>Varsity Jacket (x1):₹5,999</p>
+        </article>
+        <p>Delivery Charges: FREE</p><br>
+        <h3>Total:₹36,997</h3><br>
+        <a href="order.html">
+        <button>Place Order</button>
+        </a>
+    </section>
+    
+</main>
+  <hr>
+    <footer>
+        <p>Contact: shopify@gmail.com</p>
+        <p>&copy; 2026 Shopping Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

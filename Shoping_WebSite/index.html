@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Shopping Store</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f3f6;
+    color: #212121;
+}
+
+/* Header */
+header {
+    background: #2874f0;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Banner */
+section img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Categories */
+ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+ul li {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+ul li:hover {
+    background: #2874f0;
+    color: white;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: green;
+    font-weight: bold;
+}
+
+/* Link (no button) */
+.view-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #2874f0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.view-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #172337;
+    color: #d1d5db;
+    padding: 40px 40px 20px;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #374151;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Shopping Store</h1>
+        <nav>
+            <a href="index.htnl">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Welcome to Our Store</h1>
+            <img src="https://t4.ftcdn.net/jpg/03/34/53/51/360_F_334535136_vvbWaKEpsHIMS4dpJUxgXZL6clQX7VGs.jpg">
+        </section>
+
+        <section>
+            <h2>Categories</h2>
+            <ul>
+                <li>Electronics</li>
+                <li>Clothing</li>
+                <li>Shoes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Featured Products</h2>
+
+            <div class="products">
+
+                <div class="product-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVCMiRX0CKGS3iHcEK4hdyilvejv9TU2Nkg&s">
+                    <h3>Galaxy A53 5G</h3>
+                    <p>₹15999</p>
+                    <a href="#" class="view-link">View Details</a>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7Go_uTEanttVtQfqa4Rjxeeo_Vp12gHhTw&s">
+                    <h3>Galaxy A14 5G</h3>
+                    <p>₹14999</p>
+                    <a href="#" class="view-link">View Details</a>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p>Best prices, fast delivery, quality products</p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i>
+</a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Contact: shopify@gmail.com</p>
+            <p>&copy; 2026 Shopping Store. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

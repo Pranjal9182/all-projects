@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+/* Cart Section */
+main section:first-child {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* Product Item */
+article {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+article img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Text */
+article h3 {
+    font-size: 16px;
+}
+
+article p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Price */
+.price {
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Actions */
+.actions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* Remove */
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+/* Summary */
+.summary {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+/* Checkout */
+.checkout {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Continue */
+.continue {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+        </nav>
+        </header>
+        <main>
+            <h2>Your Cart</h2>
+            <section>
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVCMiRX0CKGS3iHcEK4hdyilvejv9TU2Nkg&s" alt="Galaxy A53" width="250" height="200">
+                <h3>Samsung Galaxy A53 5G</h3>
+                <p>Color: Blue | Storage:128GB</p>
+                <p>Price:₹15,999</p>
+                <label>Qty:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <button>Remove</button>
+            </article>
+<hr>
+    <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7Go_uTEanttVtQfqa4Rjxeeo_Vp12gHhTw&s" alt="Galaxy A14">
+                <h3>Samsung Galaxy A14 5G</h3>
+                <p>Color: Green | Storage:64GB</p>
+                <p>Price:₹14,999</p>
+                <label>Qty:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <button>Remove</button>
+            </article>
+            <hr>
+                <article>
+                <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/41398016/5244737562.jpg" alt="Varsity Jacket">
+                <h3>SRCC Varsity Jacket</h3>
+                <p>Size:M | Color:White</p>
+                <p>Price:₹5,999</p>
+                <label>Qty:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <button>Remove</button>
+            </article>
+</section>
+<section>
+<h2>Order Summary</h2><br>
+<p>Galaxy A53 5G (x1): ₹15,999</p>
+<p>Galaxy A14 5G (x1): ₹14,999</p>
+<p>Varsity Jacket (x1): ₹5,999</p>
+<p>Delivery Charges:FREE</p><br>
+<h3>Total:₹36,997</h3><br>
+<a href="checkout.html"><button>Proceed to Checkout</button></a>
+<br><br>
+<a href="products.html">Continue Shopping</a>
+</section>
+        </main>
+        <hr>
+       
+
+           <footer>
+        <p>Contact: shopify@gmail.com</p>
+        <p>&copy; 2026 Shopping Store. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

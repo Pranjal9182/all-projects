@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+header a {
+    color: #cbd5f5;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+/* Hero Section */
+section:first-child {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+}
+
+section:first-child a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: white;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Features List */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Course Cards */
+div {
+    background: #f9fafb;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Buttons */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+a:hover {
+    background: #1e40af;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0f172a;
+    color: #cbd5f5;
+    margin-top: 30px;
+}
+
+</style>
+<body>
+
+<header>
+    <h1>This is our Home Page</h1>
+    <ul>
+        <li><a href="index.html">HomePage</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+    <section>
+        <h2>Learn Skills That Matter</h2>
+        <p>Join our platform and start learning web development with practical courses.</p>
+        <a href="course.html">Explore Courses</a>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+        <img src="https://ebz-static.s3.ap-south-1.amazonaws.com/easebuzz-static/online-courses.png" 
+             alt="Online Courses" height="200">
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Easy to understand content</li>
+            <li>Practical learning approach</li>
+            <li>Affordable courses</li>
+        </ul>
+    </section>
+
+    <!-- Courses Preview -->
+    <section>
+        <h2>Popular Courses</h2>
+
+        <div>
+            <h3>HTML & CSS</h3>
+            <p>Learn basics of web design</p>
+        </div>
+
+        <div>
+            <h3>JavaScript</h3>
+            <p>Make websites interactive</p>
+        </div>
+
+        <div>
+            <h3>React.js</h3>
+            <p>Build modern web apps</p>
+        </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section>
+        <h2>Start Learning Today</h2>
+        <p>Explore our courses and build your future.</p>
+        <a href="course.html">Get Started</a>
+    </section>
+
+</main>
+
+<footer>
+    <p>Copyright &copy; All rights are reserved</p>
+</footer>
+
+</body>
+</html>
