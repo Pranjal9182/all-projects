@@ -1,4 +1,4 @@
-:root{
+/* :root{
 --bcg-color:#001122;
 --primary-color:#155e75;
 --border-radius:8px;
@@ -91,5 +91,154 @@ border-radius: var(--border-radius);
     .qr-footer a{
         padding:12px;
         font-size:16px;
+    }
+}
+@media (max-width:520px){
+    .box{
+        width:90%;
+    }
+
+    .qr-body img{
+        max-width:100%;
+        padding:10px;
+    }
+} */
+ :root{
+    --bcg-color:#001122;
+    --primary-color:#155e75;
+    --border-radius:8px;
+    --secondary-color:#fff;
+    --border-color:#7fb7c9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--bcg-color);
+    padding:20px;
+}
+
+.box{
+    background-color:var(--primary-color);
+    padding:30px;
+    width:400px;
+    max-width:100%;
+    border-radius:var(--border-radius);
+}
+
+.qr-header h1{
+    font-size:26px;
+    text-align:center;
+    color:var(--secondary-color);
+    margin-bottom:24px;
+    text-transform:uppercase;
+}
+
+.qr-header input{
+    width:100%;
+    margin-block:12px;
+}
+
+.qr-header input,
+.qr-header select{
+    width:100%;
+    padding:8px;
+    border-radius:var(--border-radius);
+    font-size:18px;
+    outline:none;
+    border:2px solid var(--border-color);
+}
+
+.qr-header label{
+    color:var(--secondary-color);
+    font-size:20px;
+}
+
+.qr-header div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+.qr-footer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.qr-footer a{
+    background-color:var(--secondary-color);
+    text-decoration:none;
+    font-size:20px;
+    padding:14px 36px;
+    color:var(--primary-color);
+    font-weight:600;
+    border-radius:var(--border-radius);
+}
+
+.qr-body{
+    display:grid;      /* Typo fixed */
+    place-items:center;
+    padding:20px;
+    overflow:hidden;
+}
+
+/* IMG aur CANVAS dono ko style */
+.qr-body img,
+.qr-body canvas{
+    width:100% !important;
+    max-width:300px;
+    height:auto !important;
+    margin-block:10px;
+    padding:20px;
+    border:0.5px solid var(--border-color);
+    border-radius:var(--border-radius);
+    background:#fff;
+    display:block;
+}
+
+@media screen and (max-width:520px){
+
+    .box{
+        width:90%;
+        padding:20px;
+    }
+
+    .qr-header h1{
+        font-size:22px;
+    }
+
+    .qr-header label{
+        font-size:18px;
+    }
+
+    .qr-header input,
+    .qr-header select{
+        font-size:16px;
+    }
+
+    .qr-footer a{
+        padding:12px;
+        font-size:16px;
+        flex:1;
+        text-align:center;
+    }
+
+    .qr-body img,
+    .qr-body canvas{
+        max-width:100%;
+        padding:10px;
     }
 }
